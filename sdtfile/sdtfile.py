@@ -269,8 +269,8 @@ class SdtFile:
                 data = data.reshape(image_x, image_y, adc_re)
             elif dsize == mi.MeasHISTInfo.mcs_points[0]:
                 data = data.reshape(-1, dsize)
-            else:
-                data = data.reshape(-1, adc_re)
+            #else:
+            #    data = data.reshape(-1, adc_re)
             self.data.append(data)
 
             if bt.contents == 'MCS_BLOCK':
